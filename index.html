@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Virtual Dog Park</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="wrap"><p class="eyebrow">AIE1101 · WEEK 5 LAB 2</p><h1>Virtual Dog Park</h1><p class="lead">认识狗狗、领养一只虚拟宠物，并陪它一起成长。</p></div></header>
+<main class="wrap">
+<section><h2>Dog Encyclopedia</h2><div class="grid">
+<article class="card"><img src="assets/beagle.svg" alt="Illustration of a Beagle"><h3>Beagle</h3><p><b>体型：</b>小到中型。</p><p><b>性格：</b>友好、好奇、精力充沛。</p><p><b>日常护理：</b>需要散步、游戏和定期梳毛。</p></article>
+<article class="card"><img src="assets/golden-retriever.svg" alt="Illustration of a Golden Retriever"><h3>Golden Retriever</h3><p><b>体型：</b>大型。</p><p><b>性格：</b>温顺、聪明、乐于合作。</p><p><b>日常护理：</b>需要运动、互动和定期梳理毛发。</p></article>
+<article class="card"><img src="assets/poodle.svg" alt="Illustration of a Poodle"><h3>Poodle</h3><p><b>体型：</b>中型（也有其他体型）。</p><p><b>性格：</b>聪明、活泼、学习能力强。</p><p><b>日常护理：</b>需要训练、游戏和规律美容。</p></article>
+</div></section>
+<section class="panel"><h2>My Virtual Dog</h2><form id="adopt-form"><label for="breed">选择品种</label><select id="breed"><option>Beagle</option><option>Golden Retriever</option><option>Poodle</option></select><label for="dog-name">狗狗名字</label><input id="dog-name" maxlength="20" required placeholder="例如 Buddy"><button>Adopt</button><p id="form-message" class="message" aria-live="polite"></p></form>
+<div id="pet-area" hidden><div class="pet-head"><h3 id="pet-title"></h3><button id="start-over" class="secondary">Start Over</button></div><div class="stats"><p>品种：<b id="pet-breed"></b></p><p>天数：<b id="pet-day"></b></p><p>成长阶段：<b id="pet-stage"></b></p><p>幸福度：<b id="pet-happiness"></b>/100</p></div><div class="growth"><div id="growth-bar"></div></div><div class="actions"><button id="feed">Feed +10</button><button id="play">Play +10</button><button id="next-day">Next Day</button></div><p id="pet-message" class="message" aria-live="polite"></p></div></section>
+</main><footer><div class="wrap">Project-created SVG illustrations · local browser progress only</div></footer><script src="script.js"></script>
+</body></html>
